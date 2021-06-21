@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+.hero-container {
+  height: 600px;
+}
+.hero-image {
+  position: relative;
+}
+.hero-image img {
+  width: 100%;
+  height: 100%;
+}
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  color: #fff;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.hero-image button {
+  border: none;
+  border-radius: 4px;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #de6c17;
+  color: #fff;
+  cursor: pointer;
+}
+.middle {
+  margin-top: 1rem;
+}
+
+.album-heading {
+  color: #36413c;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.custom {
+  border: 0;
+  color: #de6c17;
+}
+
+/* Responsive */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .hero-container {
+    height: 80%;
+  }
+
+  .hero-text {
+    top: 24%;
+    left: 10%;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
+  .hero-container {
+    height: 60%;
+  }
+  .hero-image img {
+    width: 600px;
+  }
+  .hero-text {
+    top: 24%;
+    left: 10%;
+  }
+  .hero-text h1 {
+    font-size: 1.4rem;
+  }
+  .hero-text p {
+    font-size: 0.8rem;
+  }
+  .hero-image button {
+    padding: 5px 10px;
+  }
+}
+
+@media (max-device-width: 480px) {
+  .hero-container {
+    height: 60%;
+  }
+  .hero-image img {
+    width: 639px;
+  }
+  .hero-text {
+    top: 24%;
+    left: 10%;
+  }
+  .hero-text h1 {
+    font-size: 1.9rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+  .hero-image button {
+    padding: 5px 10px;
+  }
+
+  .middle {
+    width: 470px;
+  }
+  .btn-group-vertical > .btn,
+  .btn-group > .btn {
+    font-size: 20px;
+  }
+}
